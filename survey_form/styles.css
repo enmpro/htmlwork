@@ -1,0 +1,51 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url('R.png');
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+    border: solid;
+    border-radius: 25px;
+    background: burlywood;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+}
+
+#gospel {
+    padding-bottom: 1em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+form {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    border: double;
+    border-radius: 10px;
+    background: lightgreen;
+}
+
+fieldset{
+    border: none;
+    margin: 1em auto;
+}
+
+input, textarea, select {
+    margin: 1em auto;
+    width: 100%;
+}
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 id="title">Papa Louie Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us spread the word of Louie</p>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+                <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required/></label>
+                <label id="number-label">Age (optional) <input id="number" type="number" min="10" max="105" placeholder="Age"/></label>
+            </fieldset>
+            <fieldset>
+                <label id="gospel">Would you spread the Gospel to a friend?
+                    <label><input type="radio" value="definitely" name="decision-type" class="inline" />Definitely</label>
+                    <label><input type="radio" value="yes" name="decision-type" class="inline" />Yes</label>
+                    <label><input type="radio" value="of-course" name="decision-type" class="inline" />Of Course</label>
+                </label>
+                <label>What is your favorite thing about Papa Louie?
+                    <select id="dropdown">
+                        <option>Select an option</option>
+                        <option>His Graceful Stride</option>
+                        <option>His Commanding Judgement</option>
+                        <option>His Holy Pizza</option>
+                    </select>
+                </label> 
+            </fieldset>
+            <fieldset>
+                <label>What miracle would you like Papa Louie to perform next?
+                    <label><input type="checkbox" value="million-pizzas" class="inline" />Creating a million pizzas</label>
+                    <label><input type="checkbox" value="holy-spread" class="inline" />Spreading His Holiness</label>
+                    <label><input type="checkbox" value="oregano-delivery" class="inline" />Oregano delivered to everyone</label>
+                    <label><input type="checkbox" value="pizza-city" class="inline" />More Pizza Cities</label>
+                    <label><input type="checkbox" value="teach-heretics" class="inline"/>Teaching the heretics</label>
+                </label>
+                <label >Any other suggestions?
+                    <textarea name="suggestions" rows="4" cols="30" placeholder="Enter suggestion here..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit"/>
+        </form>
+    </body>
+</html>

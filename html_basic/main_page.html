@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta tags is information about the data, being the html document, used by search engines, browsers, etc -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Basic Portfolio</title>
+         <!--This links the HTML doc to the CSS file -->
+        <link href="main_page.css" rel="stylesheet"/>  
+    </head>
+    <header>
+        <h1>
+            The Main Page
+        </h1>
+        <p>This is the main page description</p>
+    </header>
+    <body>
+         <!--Use main to emphasize that this is the main part of the page etc -->
+        <main>
+            <section>
+                <h2>
+                    Unordered Lists
+                </h2>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Ordered Lists
+                </h2>
+                <ol>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ol>
+            </section>
+            <section>
+                <h2>
+                    Make Text Stand Out
+                </h2>
+                 <!--Use id for classes (modify specific tags) or to just inform the programmer and services what the tags do -->
+                <p id="test_id"><strong>STRONG</strong>, <em>Emphasized</em>, <mark>Highlighted</mark></p>
+            </section>
+            <section>
+                <h2>Images</h2>
+                <img src="image_one.jpg" alt="Smiley face" height="200" width="300">
+                <figure>
+                    <img src="image_two.png" alt="Thinkey face" height="200" width="200">
+                    <figcaption>IMAGE CAPTION: Thinkey face</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Forms</h2>
+                <form action="" method="get">
+                    <fieldset>
+                        <legend>This is a legend (Radio buttons)</legend>
+                         <!-- Some tags have different types, you can name tags also; input tags have values you need to specify that the user chooses -->
+                        <label>This is option 1 <input id="first_option" type="radio" name="options" value="option_one" checked/></label>
+                        <label>This is option 2 <input id="second_option" type="radio" name="options" value="option_two"/></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Continued (Checkboxes)</legend>
+                        <label>This is option 1 <input id="first_option" type="checkbox" name="options" value="option_one" checked/></label>
+                        <label>This is option 2 <input id="second_option" type="checkbox" name="options" value="option_two"/></label>
+                    </fieldset>
+                    <input id="submit_button" type="text" name="submit_test" placeholder="Type something to submit" required>
+                     <!-- All forms must be submitted -->
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
